@@ -45,7 +45,7 @@ Clone o repositório:
 git clone https://github.com/LadyJessie19/frutamix-backend.git
 ```
 
-Navegue até o diretório do projeto e instale as dependências:
+Instale as dependências:
 
 ```bash
 npm install
