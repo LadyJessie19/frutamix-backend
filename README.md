@@ -4,7 +4,7 @@
 
 ### Frutamix é uma plataforma que permite aos usuários explorar sorvetes populares para atacado ou varejo.
 
-<img src="assets/front-readme.png" alt="frutamix" width="500" height="300">
+<img src="assets/front-readme.png" alt="frutamix" width="500" />
 
 **Nome do Projeto:** Frutamix 🍨🍦🍧
 
@@ -35,20 +35,19 @@ Frutamix é um aplicativo fictício que implementa um sistema de venda de sorvet
 
 ## Diagrama 📋
 
-<img src="/assets/db-frutamix.png" alt="Diagrama Frutamix" width=400 />
+<img src="/assets/db-frutamix.png" alt="Diagrama Frutamix" width=600 />
 
 ## Instalação 🔄
 
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/frutamix.git
+git clone https://github.com/LadyJessie19/frutamix-backend.git
 ```
 
 Navegue até o diretório do projeto e instale as dependências:
 
 ```bash
-cd frutamix
 npm install
 ```
 
@@ -80,7 +79,7 @@ npm run test:cov
 
 ## Equipe de Desenvolvimento 🙋‍♀️
 
-<img src="assets/jessie-dev.jpg" alt="Jessie" width="300">
+<img src="assets/jessie-dev.jpg" alt="Jessie" width="200" />
 
 - Desenvolvedora: [Jessie M Bentes](https://github.com/LadyJessie19)
 
