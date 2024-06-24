@@ -35,7 +35,7 @@ Frutamix é um aplicativo fictício que implementa um sistema de venda de sorvet
 
 ## Diagrama 📋
 
-<img src="/assets/db-frutamix.png" alt="Diagrama Frutamix" width=300 height=200>
+<img src="/assets/db-frutamix.png" alt="Diagrama Frutamix" width=400 />
 
 ## Instalação 🔄
 
@@ -80,7 +80,7 @@ npm run test:cov
 
 ## Equipe de Desenvolvimento 🙋‍♀️
 
-<img src="assets/jessie-dev.jpg" alt="Jessie" width="300" height="300">
+<img src="assets/jessie-dev.jpg" alt="Jessie" width="300">
 
 - Desenvolvedora: [Jessie M Bentes](https://github.com/LadyJessie19)
 
