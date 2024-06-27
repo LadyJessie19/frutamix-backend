@@ -22,7 +22,7 @@
 
 🟣 **Link para Importação no Insomnia:** [_em breve_]()
 
-📋 **Link para o Arquivo _tasks.todo_:** [link]("./tasks.todo")
+📋 **Link para o Arquivo _tasks.todo_:** [link](tasks.todo)
 
 ## Descrição do Projeto 📝
 
