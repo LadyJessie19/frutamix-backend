@@ -22,6 +22,8 @@
 
 🟣 **Link para Importação no Insomnia:** [_em breve_]()
 
+📋 **Link para o Arquivo _tasks.todo_:** [link]("./tasks.todo")
+
 ## Descrição do Projeto 📝
 
 Frutamix é um aplicativo fictício que implementa um sistema de venda de sorvetes. Com o sistema é possível, como admin, registrar produtos e gerar relatórios de vendas. Agora como usuário, é possível buscar sorvetes, filtrar pelas categorias e fazer pedidos dos produtos.

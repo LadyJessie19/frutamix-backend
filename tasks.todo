@@ -1,0 +1,63 @@
+Backend: 
+    ✔ Criar o projeto nest; @done(24-06-27 01:48)
+    ✔ Desenhar o diagrama; @done(24-06-27 01:49)
+    x Container docker; 
+    ✔ DB Railway; @done(24-06-27 01:51)
+    ✔ Configurar TypeORM; @done(24-06-27 01:51)
+    ✔ Definir as entidades; @done(24-06-27 01:51)
+    ✔ Add o arquivo todo ao readme; @done(24-06-27 02:14)
+    ✔ Consertar o diagrama; @done(24-06-27 02:27)
+    ✔ Criar as classes genéricas; @done(24-06-27 04:30)
+    ✔ Rotas User; @done(24-06-27 04:31)
+
+    ☐ Consertar a rota de update generica
+    ☐ Criar os dtos de User
+
+    ☐ Rotas Product;
+    ☐ Rotas Category;
+    ☐ Rotas Order;
+    ☐ Rotas Item;
+
+    ☐ Autenticação - Login;
+
+    ☐ Usar o uuid
+
+    ☐ Tratamento de Erros
+
+    ☐ Upload de arquivos(foto do produto);
+
+    ☐ Guard - somente admins criam produtos;
+
+    ☐ Funcionalidades - testar o fluxo;
+
+    ☐ Swagger;
+
+    ☐ Deploy;
+
+    ☐ Arquivo Insomnia;
+
+Funcionalidades:
+    User: 
+        ☐ Criar usuário;
+        ☐ encriptar senha;
+        ☐ Definir roles;
+        ☐ rota /me
+        ☐ Gerar relatórios de produtos mais buscados;
+        ☐ Gerar relatórios de categorias mais buscadas;
+        ☐ Gerar relatórios de produtos mais vendidos;
+        ☐ Gerar relatórios de categorias mais vendidas;
+    Category:
+        ☐ Criar category;
+    Product: 
+        ☐ Criar Produtos;
+        ☐ Somente admin
+    Photo:
+        ☐ Add fotos;
+    Order: 
+        ☐ Criar pedido;
+        ☐ Somente user;
+    Item: 
+        ☐ Criar item;
+        ☐ Item possui relacionamento com Order e Product;
+        ☐ Possui campos de quantidade e total para cálculos;
+
