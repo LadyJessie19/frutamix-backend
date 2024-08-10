@@ -35,7 +35,7 @@ export class GenericController<T extends ObjectLiteral, RequestDTO> {
   }
 
   @Delete(':id')
-  remove(@Param('id') id: number): Promise<void> {
+  remove(@Param('id') id: number): Promise<void | string> {
     return this.service.remove(id);
   }
 }

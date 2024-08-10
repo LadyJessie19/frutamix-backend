@@ -1,9 +1,10 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import {
   Repository,
   DeepPartial,
   ObjectLiteral,
   FindOneOptions,
+  FindOptionsWhere,
 } from 'typeorm';
 
 @Injectable()
@@ -22,19 +23,33 @@ export class GenericService<T extends ObjectLiteral, RequestDTO> {
   }
 
   async create(entity: RequestDTO): Promise<T> {
-    return await this.repository.save(entity as any);
+    try {
+      const newEntity: T = this.repository.create(entity as DeepPartial<T>);
+      return await this.repository.save(newEntity);
+    } catch (error) {
+      throw new InternalServerErrorException(error.message);
+    }
   }
 
   async update(id: number, entity: DeepPartial<T>): Promise<T | null> {
-    const foundEntity = await this.repository.findOne(id as any);
-    if (!foundEntity) {
-      return null;
+    const options: FindOptionsWhere<T> = { id } as any;
+    const entityToUpdate: T | null = await this.repository.findOneBy(options);
+    if (!entityToUpdate) {
+      throw new InternalServerErrorException(`Entity with id ${id} not found`);
     }
-    await this.repository.update(id, entity as any);
-    return this.findOne(id);
+    return await this.repository.save({
+      ...entityToUpdate,
+      ...entity,
+    } as DeepPartial<T>);
   }
 
-  async remove(id: number): Promise<void> {
-    await this.repository.delete(id);
+  async remove(id: number): Promise<void | string> {
+    const options: FindOptionsWhere<T> = { id } as any;
+    const entityToRemove: T | null = await this.repository.findOneBy(options);
+    if (!entityToRemove) {
+      throw new InternalServerErrorException(`Entity with id ${id} not found`);
+    }
+    await this.repository.remove(entityToRemove);
+    return 'Removed';
   }
 }

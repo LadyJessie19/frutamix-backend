@@ -31,7 +31,7 @@ export class User {
     type: 'varchar',
     length: 64,
     nullable: false,
-    select: true,
+    select: false,
   })
   password: string;
 
@@ -58,10 +58,16 @@ export class User {
   @BeforeInsert()
   @BeforeUpdate()
   public async passwordHash() {
-    try {
-      this.password = await bcrypt.hash(this.password, 10);
-    } catch (error) {
-      throw new InternalServerErrorException('Error on password hash.');
+    if (this.password && !this.isPasswordHashed()) {
+      try {
+        this.password = await bcrypt.hash(this.password, 10);
+      } catch (error) {
+        throw new InternalServerErrorException('Error on password hash.');
+      }
     }
+  }
+
+  private isPasswordHashed(): boolean {
+    return this.password.startsWith('$2b$'); // Bcrypt hashes start with '$2b$'
   }
 }

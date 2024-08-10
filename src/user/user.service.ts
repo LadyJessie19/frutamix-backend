@@ -13,4 +13,19 @@ export class UserService extends GenericService<User, CreateUserDTO> {
   ) {
     super(userRepository);
   }
+
+  async findUserByEmail(email: string): Promise<User | null> {
+    return this.userRepository.findOne({
+      where: { email },
+      select: [
+        'id',
+        'email',
+        'password',
+        'name',
+        'role',
+        'createdAt',
+        'updatedAt',
+      ],
+    });
+  }
 }

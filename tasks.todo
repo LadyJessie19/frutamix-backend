@@ -10,15 +10,15 @@ Backend:
     ✔ Criar as classes genéricas; @done(24-06-27 04:30)
     ✔ Rotas User; @done(24-06-27 04:31)
 
-    ☐ Consertar a rota de update generica
-    ☐ Criar os dtos de User
+    ✔ Consertar a rota de update generica @done(24-08-09 20:32)
+    ✔ Criar os dtos de User @done(24-08-09 20:32)
 
     ☐ Rotas Product;
     ☐ Rotas Category;
     ☐ Rotas Order;
     ☐ Rotas Item;
 
-    ☐ Autenticação - Login;
+    ✔ Autenticação - Login; @done(24-08-09 20:32)
 
     ☐ Usar o uuid
 
