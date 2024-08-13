@@ -13,8 +13,8 @@ import { Product } from './product.entity';
 
 @Entity('items')
 export class Item {
-  @PrimaryGeneratedColumn()
-  id: number;
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
 
   @Column({ default: 1 })
   quantity: number;

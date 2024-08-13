@@ -9,18 +9,17 @@ Backend:
     ✔ Consertar o diagrama; @done(24-06-27 02:27)
     ✔ Criar as classes genéricas; @done(24-06-27 04:30)
     ✔ Rotas User; @done(24-06-27 04:31)
-
     ✔ Consertar a rota de update generica @done(24-08-09 20:32)
     ✔ Criar os dtos de User @done(24-08-09 20:32)
 
-    ☐ Rotas Product;
-    ☐ Rotas Category;
-    ☐ Rotas Order;
-    ☐ Rotas Item;
+    13-08-24:
+        ☐ Rotas Category;
+        ☐ Rotas Product;
+        ☐ Rotas Order;
+        ☐ Rotas Item;
 
     ✔ Autenticação - Login; @done(24-08-09 20:32)
-
-    ☐ Usar o uuid
+    ✔ Usar o uuid @done(24-08-12 22:00)
 
     ☐ Tratamento de Erros
 
@@ -34,14 +33,14 @@ Backend:
 
     ☐ Deploy;
 
-    ☐ Arquivo Insomnia;
+    ☐ Arquivo Coleção de reqs;
 
 Funcionalidades:
     User: 
-        ☐ Criar usuário;
-        ☐ encriptar senha;
-        ☐ Definir roles;
-        ☐ rota /me
+        ✔ Criar usuário; @done(24-08-12 22:01)
+        ✔ encriptar senha; @done(24-08-12 22:01)
+        ✔ Definir roles; @done(24-08-12 22:01)
+        ✔ rota /me @done(24-08-12 22:34)
         ☐ Gerar relatórios de produtos mais buscados;
         ☐ Gerar relatórios de categorias mais buscadas;
         ☐ Gerar relatórios de produtos mais vendidos;
@@ -60,4 +59,3 @@ Funcionalidades:
         ☐ Criar item;
         ☐ Item possui relacionamento com Order e Product;
         ☐ Possui campos de quantidade e total para cálculos;
-
