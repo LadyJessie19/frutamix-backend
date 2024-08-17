@@ -13,13 +13,17 @@ Backend:
     ✔ Criar os dtos de User @done(24-08-09 20:32)
 
     13-08-24:
-        ☐ Rotas Category;
-        ☐ Rotas Product;
-        ☐ Rotas Order;
-        ☐ Rotas Item;
-
+        ✔ Rotas Category; @done(24-08-16 23:56)
+        ✔ Rotas Product; @done(24-08-16 23:56)
+        ✔ Rotas Order; @done(24-08-16 23:56)
+        ✔ Rotas Item; @done(24-08-16 23:56)
+    
     ✔ Autenticação - Login; @done(24-08-09 20:32)
     ✔ Usar o uuid @done(24-08-12 22:00)
+
+    ☐ Não precisa de crud para item - somente o criar e remover;
+    ☐ Lógica de add fotos no create de product;
+    ☐ Lógica de score;
 
     ☐ Tratamento de Erros
 
@@ -28,6 +32,8 @@ Backend:
     ☐ Guard - somente admins criam produtos;
 
     ☐ Funcionalidades - testar o fluxo;
+
+    ☐ Gerar PDF com os relatórios;
 
     ☐ Swagger;
 
@@ -46,12 +52,12 @@ Funcionalidades:
         ☐ Gerar relatórios de produtos mais vendidos;
         ☐ Gerar relatórios de categorias mais vendidas;
     Category:
-        ☐ Criar category;
+        ✔ Criar category; @done(24-08-17 00:14)
     Product: 
         ☐ Criar Produtos;
+        ☐ Add fotos;
         ☐ Somente admin
     Photo:
-        ☐ Add fotos;
     Order: 
         ☐ Criar pedido;
         ☐ Somente user;
