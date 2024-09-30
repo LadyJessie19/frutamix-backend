@@ -16,7 +16,7 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('should return "I`m thumbs up! 👍"', () => {
-      expect(appController.getHealth).toBe('I`m thumbs up! 👍');
+      expect(appController.getHealth()).toBe('I`m thumbs up! 👍');
     });
   });
 });

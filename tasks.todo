@@ -25,6 +25,8 @@ Backend:
     ☐ Lógica de add fotos no create de product;
     ☐ Lógica de score;
 
+    ☐ Procurar como fazer um spyOn em testes. 😒
+
     ☐ Tratamento de Erros
 
     ☐ Upload de arquivos(foto do produto);
